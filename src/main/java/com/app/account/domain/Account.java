@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+import java.math.BigDecimal;
 
 
 @AllArgsConstructor
@@ -30,13 +31,13 @@ public class Account {
 
     @NotEmpty
     @Column
-    private Float availableFunds;
+    private BigDecimal availableFunds;
 
     @ManyToOne
     @JoinColumn(name = "customer_id")
     private Customer customer;
 
-    public Account(Long id, String nrb, Currency currency, Float availableFunds) {
+    public Account(Long id, String nrb, Currency currency, BigDecimal availableFunds) {
     }
 
     @Override

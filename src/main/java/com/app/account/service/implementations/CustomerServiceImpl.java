@@ -13,7 +13,7 @@ public class CustomerServiceImpl implements CustomerService {
     //private final CustomerService customerService;
 
     @Override
-    public Customer getCustomerById(Long customerId) {
+    public Customer getCustomerById(Long customerId) throws NotFoundException {
         // Test response
         /*Account account = new Account(1421L, "72249000059957936727967706", Currency.PLN, 6525.11F);
         List<Account> accountList = new ArrayList<>();

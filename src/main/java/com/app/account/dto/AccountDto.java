@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.math.BigDecimal;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -15,6 +17,6 @@ public class AccountDto {
     private Long id;
     private String nrb;
     private Currency currency;
-    private Float availableFunds;
+    private BigDecimal availableFunds;
 
 }
