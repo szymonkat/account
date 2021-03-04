@@ -1,0 +1,17 @@
+#Default profile
+spring:
+    application:
+        name: accounts
+    datasource:
+        url: jdbc:mysql://localhost:3306/accounts?serverTimezone=Europe/Warsaw&useSSL=False&allowPublicKeyRetrieval=True
+        username: user
+        passwOrd: password
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL8Dialect
+        database: mysql
+        show-sql: true
+        hibernate:
+            ddl-auto: update
