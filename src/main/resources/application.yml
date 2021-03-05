@@ -5,15 +5,15 @@ spring:
         active: production
 
     datasource:
-        url: jdbc:mysql://localhost:3306/accounts?serverTimezone=Europe/Warsaw&useSSL=False&allowPublicKeyRetrieval=True
-        username: user
-        passwOrd: password
-        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:postgresql://localhost:5432/postgres
+        username: postgres
+        passwOrd: root
+        driver-class-name: org.postgresql.Driver
     jpa:
         properties:
             hibernate:
-                dialect: org.hibernate.dialect.MySQL8Dialect
-        database: mysql
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+        database: postgresql
         show-sql: true
         hibernate:
             ddl-auto: update
