@@ -33,9 +33,8 @@ public class Account {
     @Column
     private BigDecimal availableFunds;
 
-    @ManyToOne
-    @JoinColumn(name = "customer_id")
-    private Customer customer;
+    @Column
+    private Long customerId;
 
     public Account(Long id, String nrb, Currency currency, BigDecimal availableFunds) {
         this.id = id;
@@ -55,7 +54,7 @@ public class Account {
         if (!nrb.equals(account.nrb)) return false;
         if (currency != account.currency) return false;
         if (!availableFunds.equals(account.availableFunds)) return false;
-        return customer != null ? customer.equals(account.customer) : account.customer == null;
+        return customerId.equals(account.customerId);
     }
 
     @Override
@@ -64,7 +63,7 @@ public class Account {
         result = 31 * result + nrb.hashCode();
         result = 31 * result + currency.hashCode();
         result = 31 * result + availableFunds.hashCode();
-        result = 31 * result + (customer != null ? customer.hashCode() : 0);
+        result = 31 * result + customerId.hashCode();
         return result;
     }
 }
