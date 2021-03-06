@@ -16,3 +16,14 @@ spring:
         show-sql: ${accounts.jpa.show-sql}
         hibernate:
             ddl-auto: ${accounts.jpa.hibernate.ddl-auto}
+
+# ACTUATOR INFO
+info:
+    app:
+        name: "Accounts"
+        version: "0.0.1"
+        profile: ${spring.profiles.active}
+    serverInfo:
+        port: ${server.port}
+application:
+    allow-get-accounts: ${accounts.allow-get-accounts}
