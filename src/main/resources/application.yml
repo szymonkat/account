@@ -3,17 +3,16 @@ spring:
         name: accounts
     profiles:
         active: production
-
     datasource:
-        url: jdbc:postgresql://localhost:5432/postgres
-        username: postgres
-        passwOrd: root
-        driver-class-name: org.postgresql.Driver
+        url: ${accounts.datasource.url}
+        username: ${accounts.datasource.username}
+        password: ${accounts.datasource.password}
+        driver-class-name: ${accounts.datasource.driver-class-name}
     jpa:
         properties:
             hibernate:
-                dialect: org.hibernate.dialect.PostgreSQLDialect
-        database: postgresql
-        show-sql: true
+                dialect: ${accounts.jpa.properties.hibernate.dialect}
+        database: ${accounts.jpa.database}
+        show-sql: ${accounts.jpa.show-sql}
         hibernate:
-            ddl-auto: update
+            ddl-auto: ${accounts.jpa.hibernate.ddl-auto}
