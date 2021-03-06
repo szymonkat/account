@@ -1,5 +1,9 @@
 package com.app.account.service.interfaces;
 
-public interface AccountService {
+import com.app.account.domain.Account;
 
+import java.util.List;
+
+public interface AccountService {
+    List<Account> getAccountsByCustomerId(final Long customerId);
 }

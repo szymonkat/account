@@ -14,7 +14,7 @@ import org.springframework.web.server.ResponseStatusException;
 @Slf4j
 @RefreshScope
 @RestController
-@RequestMapping("/v1/accounts")
+@RequestMapping("/v1/customer")
 @RequiredArgsConstructor
 public class CustomerController {
 

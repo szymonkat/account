@@ -9,13 +9,15 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class CustomerMapper {
 
-    private final AccountMapper accountMapper;
-
     public Customer mapToCustomer(CustomerDto customerDto) {
-        return new Customer(customerDto.getId(), accountMapper.mapToAccountList(customerDto.getAccounts()));
+        return new Customer(customerDto.getId(),
+                customerDto.getFirstName(),
+                customerDto.getFirstName());
     }
 
     public CustomerDto mapToCustomerDto(Customer customer) {
-        return new CustomerDto(customer.getId(), accountMapper.mapToAccountDtoList(customer.getAccounts()));
+        return new CustomerDto(customer.getId(),
+                customer.getFirstName(),
+                customer.getLastName());
     }
 }

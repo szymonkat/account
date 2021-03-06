@@ -6,8 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -20,10 +18,16 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column
+    private String firstName;
+
+    @Column
+    private String lastName;
+/*
     @OneToMany(targetEntity = Account.class,
             fetch = FetchType.EAGER,
             mappedBy = "customer",
             cascade = CascadeType.MERGE)
-    private List<Account> accounts = new ArrayList<>();
+    private List<Account> accounts = new ArrayList<>();*/
 
 }
