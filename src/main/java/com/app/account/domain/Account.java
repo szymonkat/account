@@ -38,6 +38,10 @@ public class Account {
     private Customer customer;
 
     public Account(Long id, String nrb, Currency currency, BigDecimal availableFunds) {
+        this.id = id;
+        this.nrb = nrb;
+        this.currency = currency;
+        this.availableFunds = availableFunds;
     }
 
     @Override

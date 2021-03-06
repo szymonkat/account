@@ -23,7 +23,7 @@ public class Customer {
     @OneToMany(targetEntity = Account.class,
             fetch = FetchType.EAGER,
             mappedBy = "customer",
-            cascade = CascadeType.ALL)
+            cascade = CascadeType.MERGE)
     private List<Account> accounts = new ArrayList<>();
 
 }
