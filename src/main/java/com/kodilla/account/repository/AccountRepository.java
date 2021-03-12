@@ -1,6 +1,6 @@
-package com.app.account.repository;
+package com.kodilla.account.repository;
 
-import com.app.account.domain.Account;
+import com.kodilla.account.domain.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

@@ -1,6 +1,6 @@
-package com.app.account.service.interfaces;
+package com.kodilla.account.service.interfaces;
 
-import com.app.account.domain.Account;
+import com.kodilla.account.domain.Account;
 
 import java.util.List;
 

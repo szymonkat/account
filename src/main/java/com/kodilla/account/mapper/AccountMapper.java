@@ -1,7 +1,7 @@
-package com.app.account.mapper;
+package com.kodilla.account.mapper;
 
-import com.app.account.domain.Account;
-import com.app.account.dto.AccountDto;
+import com.kodilla.account.domain.Account;
+import com.kodilla.account.dto.AccountDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

@@ -1,8 +1,8 @@
-package com.app.account.config;
+package com.kodilla.account.config;
 
-import com.app.account.repository.AccountRepository;
-import com.app.account.service.implementations.AccountServiceImpl;
-import com.app.account.service.interfaces.AccountService;
+import com.kodilla.account.repository.AccountRepository;
+import com.kodilla.account.service.implementations.AccountServiceImpl;
+import com.kodilla.account.service.interfaces.AccountService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

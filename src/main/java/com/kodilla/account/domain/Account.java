@@ -1,4 +1,4 @@
-package com.app.account.domain;
+package com.kodilla.account.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
