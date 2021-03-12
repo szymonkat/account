@@ -1,4 +1,4 @@
-package com.kodilla.account;
+package com.kodilla.accounts;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

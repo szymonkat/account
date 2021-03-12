@@ -1,4 +1,4 @@
-package com.kodilla.account;
+package com.kodilla.accounts;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

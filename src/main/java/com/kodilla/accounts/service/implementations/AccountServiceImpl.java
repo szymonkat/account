@@ -1,8 +1,8 @@
-package com.kodilla.account.service.implementations;
+package com.kodilla.accounts.service.implementations;
 
-import com.kodilla.account.domain.Account;
-import com.kodilla.account.repository.AccountRepository;
-import com.kodilla.account.service.interfaces.AccountService;
+import com.kodilla.accounts.domain.Account;
+import com.kodilla.accounts.repository.AccountRepository;
+import com.kodilla.accounts.service.interfaces.AccountService;
 import lombok.RequiredArgsConstructor;
 
 import java.util.List;

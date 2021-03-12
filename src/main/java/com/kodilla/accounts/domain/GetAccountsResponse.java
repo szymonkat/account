@@ -1,6 +1,6 @@
-package com.kodilla.account.domain;
+package com.kodilla.accounts.domain;
 
-import com.kodilla.account.dto.AccountDto;
+import com.kodilla.accounts.dto.AccountDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

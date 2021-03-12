@@ -1,6 +1,6 @@
-package com.kodilla.account.dto;
+package com.kodilla.accounts.dto;
 
-import com.kodilla.account.domain.Currency;
+import com.kodilla.accounts.domain.Currency;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

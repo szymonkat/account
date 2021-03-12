@@ -1,9 +1,9 @@
-package com.kodilla.account.controller;
+package com.kodilla.accounts.controller;
 
-import com.kodilla.account.domain.GetAccountsResponse;
-import com.kodilla.account.dto.AccountDto;
-import com.kodilla.account.mapper.AccountMapper;
-import com.kodilla.account.service.interfaces.AccountService;
+import com.kodilla.accounts.domain.GetAccountsResponse;
+import com.kodilla.accounts.dto.AccountDto;
+import com.kodilla.accounts.mapper.AccountMapper;
+import com.kodilla.accounts.service.interfaces.AccountService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;

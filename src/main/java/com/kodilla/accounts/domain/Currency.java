@@ -1,4 +1,4 @@
-package com.kodilla.account.domain;
+package com.kodilla.accounts.domain;
 
 public enum Currency {
         USD("USD"),
