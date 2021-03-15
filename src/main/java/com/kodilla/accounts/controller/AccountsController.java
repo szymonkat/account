@@ -1,6 +1,7 @@
 package com.kodilla.accounts.controller;
 
 import com.kodilla.accounts.domain.GetAccountsResponse;
+import com.kodilla.accounts.domain.TransferAccountValueCheck;
 import com.kodilla.accounts.dto.AccountDto;
 import com.kodilla.accounts.mapper.AccountMapper;
 import com.kodilla.accounts.service.interfaces.AccountService;
@@ -42,5 +43,14 @@ public class AccountsController {
 
         return GetAccountsResponse.of(accounts);
     }
+
+    /*@GetMapping
+    public TransferAccountValueCheck getAccounts(@RequestParam("customerId") Long customerId) {
+        log.info("Get accounts for customerId: {}", customerId);
+
+        List<AccountDto> accounts = accountMapper.mapToAccountDtoList(accountService.getAccountsByCustomerId(customerId));
+
+        return new TransferAccountValueCheck();
+    }*/
 
 }
