@@ -44,13 +44,13 @@ public class AccountsController {
         return GetAccountsResponse.of(accounts);
     }
 
-    /*@GetMapping
-    public TransferAccountValueCheck getAccounts(@RequestParam("customerId") Long customerId) {
+    @GetMapping("transfer")
+    public TransferAccountValueCheck getTransferValue(@RequestParam("customerId") Long customerId) {
         log.info("Get accounts for customerId: {}", customerId);
 
         List<AccountDto> accounts = accountMapper.mapToAccountDtoList(accountService.getAccountsByCustomerId(customerId));
 
         return new TransferAccountValueCheck();
-    }*/
+    }
 
 }
